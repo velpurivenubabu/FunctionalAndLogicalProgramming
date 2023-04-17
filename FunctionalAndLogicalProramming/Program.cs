@@ -25,7 +25,11 @@
                     PerfectNumber.PerfectNumberOrNot(number);
 
                     break;
-
+                case 3:
+                    Console.WriteLine("Enter Number witch you want to find prime or not");
+                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    PrimeNumber.PrimeNumberOrNot(number1);
+                    break;
             }
         }
     }
