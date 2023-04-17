@@ -1,11 +1,13 @@
-﻿namespace FunctionalAndLogicalProramming
+﻿using System.Transactions;
+
+namespace FunctionalAndLogicalProramming
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci/n2.PerfectNumber");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -29,6 +31,11 @@
                     Console.WriteLine("Enter Number witch you want to find prime or not");
                     int number1 = Convert.ToInt32(Console.ReadLine());
                     PrimeNumber.PrimeNumberOrNot(number1);
+                    break;
+                case 4:
+                    Console.WriteLine("Enter number Witch you want to reverse");
+                    string number2 = Console.ReadLine();
+                    ReverseNumber.ReverseTheNumber(number2);
                     break;
             }
         }
