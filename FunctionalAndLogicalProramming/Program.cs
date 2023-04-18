@@ -7,7 +7,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -42,7 +42,10 @@ namespace FunctionalAndLogicalProramming
                     int number3 = Convert.ToInt32(Console.ReadLine());
                     DistinctNumbers.GetDistinctNumbers(number3);
                     break;
+                case 6:
 
+                    StopWatchcs.stopWatch();
+                    break;
             }
         }
     }
