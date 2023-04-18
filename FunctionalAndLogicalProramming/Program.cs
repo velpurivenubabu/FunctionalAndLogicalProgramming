@@ -7,7 +7,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -37,6 +37,12 @@ namespace FunctionalAndLogicalProramming
                     string number2 = Console.ReadLine();
                     ReverseNumber.ReverseTheNumber(number2);
                     break;
+                case 5:
+                    Console.WriteLine("Enter number of Unique numbers you want to generate");
+                    int number3 = Convert.ToInt32(Console.ReadLine());
+                    DistinctNumbers.GetDistinctNumbers(number3);
+                    break;
+
             }
         }
     }
