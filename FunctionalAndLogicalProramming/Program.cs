@@ -7,7 +7,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -45,6 +45,10 @@ namespace FunctionalAndLogicalProramming
                 case 6:
 
                     StopWatchcs.stopWatch();
+                    break;
+                case 7:
+
+                    MinimumNumberOfNotes.GetMinimumNumberOfNotes();
                     break;
             }
         }
