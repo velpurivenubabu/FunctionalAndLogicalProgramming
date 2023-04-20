@@ -7,7 +7,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.Weekday");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -49,6 +49,15 @@ namespace FunctionalAndLogicalProramming
                 case 7:
 
                     MinimumNumberOfNotes.GetMinimumNumberOfNotes();
+                    break;
+                case 8:
+                    Console.WriteLine("Enter year");
+                    int year= Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter Month");
+                    int month = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter Day");
+                    int day = Convert.ToInt32(Console.ReadLine());
+                    DayOfTheWeek.FindWeekDay(year,month,day);
                     break;
             }
         }
