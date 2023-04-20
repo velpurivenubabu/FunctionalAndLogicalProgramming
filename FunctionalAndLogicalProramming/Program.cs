@@ -8,7 +8,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion\n10.MonthlyPayment");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -68,6 +68,15 @@ namespace FunctionalAndLogicalProramming
                    int temperature= Convert.ToInt32(input1[0]);
                    UnitConversion.Conversion(temperature, unit);
                    break;
+                case 10:
+                    Console.WriteLine("Enter The Principal Amount");
+                    double principalamount = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter No.Of.Years");
+                    double years = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter Rate Of Interest");
+                    double rateOfInterest = Convert.ToDouble(Console.ReadLine());
+                    MonthlyPayment.CalculateMonthlyPayment(principalamount, years, rateOfInterest);
+                    break;
             }
         }
     }
