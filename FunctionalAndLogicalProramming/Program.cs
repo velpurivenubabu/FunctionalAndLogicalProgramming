@@ -8,7 +8,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion\n10.MonthlyPayment");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion\n10.MonthlyPayment\n11.Squareroot");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
