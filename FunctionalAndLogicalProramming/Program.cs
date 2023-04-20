@@ -1,4 +1,5 @@
 ﻿using System.Transactions;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FunctionalAndLogicalProramming
 {
@@ -7,7 +8,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.Weekday");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -55,10 +56,18 @@ namespace FunctionalAndLogicalProramming
                     int year= Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Enter Month");
                     int month = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter Day");
+                    Console.WriteLine("Enter Date");
                     int day = Convert.ToInt32(Console.ReadLine());
                     DayOfTheWeek.FindWeekDay(year,month,day);
                     break;
+                case 9:
+                    Console.WriteLine("Enter Temperatue with units(C/F) supprated by space");
+                   string temp= Console.ReadLine();
+                   string[] input1 = temp.Split(" ");
+                   string unit= input1[1];
+                   int temperature= Convert.ToInt32(input1[0]);
+                   UnitConversion.Conversion(temperature, unit);
+                   break;
             }
         }
     }
