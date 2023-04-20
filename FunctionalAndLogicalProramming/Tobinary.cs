@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace FunctionalAndLogicalProramming
 {
     internal class Tobinary
     {
-        public static void GetBinary(int number)
+        public static string GetBinary(int number)
         {
             string rec = "";
             int power2 = 2;
@@ -30,8 +31,8 @@ namespace FunctionalAndLogicalProramming
                 }
                 power2 /= 2;
             }
-            int req=Convert.ToInt32(rec);
-            Console.WriteLine(req);
+
+            return rec;
         }
     }
 }
