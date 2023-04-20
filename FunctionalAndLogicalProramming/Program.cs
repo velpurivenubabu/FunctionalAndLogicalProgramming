@@ -77,6 +77,12 @@ namespace FunctionalAndLogicalProramming
                     double rateOfInterest = Convert.ToDouble(Console.ReadLine());
                     MonthlyPayment.CalculateMonthlyPayment(principalamount, years, rateOfInterest);
                     break;
+                case 11:
+                    Console.WriteLine("Enter The Number Witch you want to find the square root");
+                    int number4=Convert.ToInt32(Console.ReadLine());
+                    SquareRoot.GetSquareRoot(number4);
+
+                    break;
             }
         }
     }
