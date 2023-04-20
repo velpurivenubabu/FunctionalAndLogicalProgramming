@@ -8,7 +8,7 @@ namespace FunctionalAndLogicalProramming
         static void Main(string[] args)
         {
             Console.WriteLine("Enter bellow options");
-            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion\n10.MonthlyPayment\n11.Squareroot\n12.Tobinary");
+            Console.WriteLine("1.Fabanocci\n2.PerfectNumber\n3.PrimeNumber\n4.ReverseNumber\n5.UniqueCoopan\n6.Stopwatch\n7.MinimumNumberOfNotes\n8.WeekDay\n9.TemperatureConversion\n10.MonthlyPayment\n11.Squareroot\n12.Tobinary\n13.SwappingBinary");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             { 
@@ -86,8 +86,17 @@ namespace FunctionalAndLogicalProramming
                 case 12:
                     Console.WriteLine("Enter The Number Witch you want to Convert into binary");
                     int num = Convert.ToInt32(Console.ReadLine());
-                    Tobinary.GetBinary(num);
+                    Console.WriteLine(Tobinary.GetBinary(num));
 
+                    break;
+                case 13:
+                    Console.WriteLine("Enter The Number Witch you want to Convert into binary");
+                    int num1= Convert.ToInt32(Console.ReadLine());
+                    string binaryNumber = Tobinary.GetBinary(num1);
+                    SwppingBinary.SwapNumber(binaryNumber, num1);
+                    break;
+                default:
+                    Console.WriteLine("Enter below Mentioned options only");
                     break;
             }
         }
