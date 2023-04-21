@@ -24,27 +24,14 @@ namespace FunctionalAndLogicalProramming
             }
             string[] bilist = rec.Split(" ");
             string newnum = bilist[1] + bilist[0];
-            //Console.WriteLine(rec);
-            int reqno = num1;
-            int output = 0;
-            int multiplyNumber = 0;
-            foreach (char i in newnum)
-            {
-                if (i == '1')
-                {
-                    multiplyNumber = 1;
-                }
-                else
-                {
-                    multiplyNumber = 0;
+            int  number = Convert.ToInt32(newnum, 2);
+            Console.WriteLine(number);
 
-                }
-                output += multiplyNumber * reqno;
-                reqno = reqno / 2;
+            
 
-            }
-        
-            Console.WriteLine(output);
+
+
+
         }
     }
 }
