@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,14 +25,27 @@ namespace FunctionalAndLogicalProramming
             }
             string[] bilist = rec.Split(" ");
             string newnum = bilist[1] + bilist[0];
-            int  number = Convert.ToInt32(newnum, 2);
-            Console.WriteLine(number);
-
-            
-
-
-
-
+            Console.WriteLine(newnum);
+            string newnum1 = "";
+            foreach (char i in newnum)
+            {
+                newnum1 = i + newnum1;
+            }
+            Console.WriteLine(newnum1); 
+            int counter = 0;
+            double reqNumber = 0;
+            foreach (char i in newnum1) {
+               
+                Console.WriteLine(i);
+                double myNumber = (Math.Pow(2, counter));
+                if (i == '1')
+                {
+                    reqNumber = reqNumber+myNumber;
+                    
+                }
+                counter++;
+            }
+            Console.WriteLine(reqNumber);
         }
     }
 }
