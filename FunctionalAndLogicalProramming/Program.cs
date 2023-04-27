@@ -93,7 +93,7 @@ namespace FunctionalAndLogicalProramming
                     Console.WriteLine("Enter The Number Witch you want to Convert into binary");
                     int num1= Convert.ToInt32(Console.ReadLine());
                     string binaryNumber = Tobinary.GetBinary(num1);
-                    SwppingBinary.SwapNumber(binaryNumber, num1);
+                    SwppingBinary.SwapNumber(binaryNumber);
                     break;
                 default:
                     Console.WriteLine("Enter below Mentioned options only");
