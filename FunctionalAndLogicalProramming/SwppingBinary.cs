@@ -9,7 +9,7 @@ namespace FunctionalAndLogicalProramming
 {
     internal class SwppingBinary
     {
-        public static void SwapNumber(string binaryNumber, int num1)
+        public static void SwapNumber(string binaryNumber)
         {
             string rec = "";
             int count = 0;
